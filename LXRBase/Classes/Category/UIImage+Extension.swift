@@ -14,7 +14,7 @@ public extension UIImage{
     /// - Parameters:
     ///   - color: 颜色
     ///   - size: 大小
-    public convenience init?(color: UIColor, size: CGSize = CGSize(width: 1.0, height: 1.0)) {
+    convenience init?(color: UIColor, size: CGSize = CGSize(width: 1.0, height: 1.0)) {
         UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
         defer {UIGraphicsEndImageContext()}
         guard let context = UIGraphicsGetCurrentContext() else {return nil}
