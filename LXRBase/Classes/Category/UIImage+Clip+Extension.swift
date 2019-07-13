@@ -37,12 +37,14 @@ public extension UIImage{
     
     //ImageIO
     func resizeIO(size:CGSize) -> UIImage? {
-        guard let data = UIImagePNGRepresentation(self) else { return nil }
+        //guard let data = UIImagePNGRepresentation(self) else { return nil }
+        guard let data = self.pngData() else { return nil }
         let maxPixelSize = max(size.width, size.height)
         //let imageSource = CGImageSourceCreateWithURL(url, nil)
         guard let imageSource = CGImageSourceCreateWithData(data as CFData, nil) else { return nil }
-        
-        //kCGImageSourceThumbnailMaxPixelSize为生成缩略图的大小。当设置为800，如果图片本身大于800*600，则生成后图片大小为800*600，如果源图片为700*500，则生成图片为800*500
+        //kCGImageSourceThumbnailMaxPixelSize为生成缩略图的大小。
+        //当设置为800，如果图片本身大于800*600，则生成后图片大小为800*600
+        //如果源图片为700*500，则生成图片为800*500
         let options: [NSString: Any] = [
             kCGImageSourceThumbnailMaxPixelSize: maxPixelSize,
             kCGImageSourceCreateThumbnailFromImageAlways: true
