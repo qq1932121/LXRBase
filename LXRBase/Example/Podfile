@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LXRBase_Example' do
+  pod 'LXRBase', :path => '../'
+
+  target 'LXRBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
