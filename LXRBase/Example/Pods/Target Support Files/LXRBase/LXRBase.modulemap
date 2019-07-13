@@ -1,6 +1,0 @@
-framework module LXRBase {
-  umbrella header "LXRBase-umbrella.h"
-
-  export *
-  module * { export * }
-}
