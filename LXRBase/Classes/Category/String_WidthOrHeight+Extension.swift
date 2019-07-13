@@ -6,7 +6,7 @@
 //  Copyright © 2019 NewLianJing. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// 字体宽高
 public extension String{

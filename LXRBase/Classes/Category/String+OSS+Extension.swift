@@ -6,7 +6,7 @@
 //  Copyright © 2018年 NewLianJing. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// OSS图片处理
 public extension String{

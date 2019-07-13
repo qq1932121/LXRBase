@@ -6,7 +6,7 @@
 //  Copyright © 2019 NewLianJing. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UIButton{
     
@@ -28,7 +28,7 @@ public extension UIButton{
         if let backGroundImageName = backGroundImageName {
             customButton.setBackgroundImage(UIImage(named :backGroundImageName), for: .normal)
         }
-        customButton.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        customButton.addTarget(target, action: action, for: .touchUpInside)
         customButton.sizeToFit()
         return customButton
     }

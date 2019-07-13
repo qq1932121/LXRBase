@@ -7,7 +7,7 @@
 
 ///  图片处理
 
-import Foundation
+import UIKit
 
 public extension UIImage{
     //CoreGraphics

@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1AB3591EBA0FDA9A8653DDC9 /* Pods-LXRBase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXRBase_Tests.release.xcconfig"; path = "Target Support Files/Pods-LXRBase_Tests/Pods-LXRBase_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		417A845978D01D48D56D2213 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		417A845978D01D48D56D2213 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LXRBase_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXRBase_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,10 +40,10 @@
 		607FACE51AFB9204008FA782 /* LXRBase_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXRBase_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		68FD6347FF27871D08417C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		68FD6347FF27871D08417C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6D636D20D18ADE9EE3FE8D24 /* Pods-LXRBase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXRBase_Example.release.xcconfig"; path = "Target Support Files/Pods-LXRBase_Example/Pods-LXRBase_Example.release.xcconfig"; sourceTree = "<group>"; };
 		839687799577C97A965E91C7 /* Pods_LXRBase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXRBase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBBDB3DACB94602564F24D4 /* LXRBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LXRBase.podspec; path = ../LXRBase.podspec; sourceTree = "<group>"; };
+		ACBBDB3DACB94602564F24D4 /* LXRBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXRBase.podspec; path = ../LXRBase.podspec; sourceTree = "<group>"; };
 		B2BCECC69BDE9DA4931F55B0 /* Pods-LXRBase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXRBase_Example.debug.xcconfig"; path = "Target Support Files/Pods-LXRBase_Example/Pods-LXRBase_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E073445FC353025A329A0A9B /* Pods-LXRBase_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXRBase_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LXRBase_Tests/Pods-LXRBase_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE1F6AAEF65A42632B4126E5 /* Pods_LXRBase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXRBase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +77,6 @@
 				E073445FC353025A329A0A9B /* Pods-LXRBase_Tests.debug.xcconfig */,
 				1AB3591EBA0FDA9A8653DDC9 /* Pods-LXRBase_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 45XJ3379D3;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -482,13 +483,15 @@
 			baseConfigurationReference = B2BCECC69BDE9DA4931F55B0 /* Pods-LXRBase_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45XJ3379D3;
 				INFOPLIST_FILE = LXRBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -497,13 +500,15 @@
 			baseConfigurationReference = 6D636D20D18ADE9EE3FE8D24 /* Pods-LXRBase_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45XJ3379D3;
 				INFOPLIST_FILE = LXRBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
